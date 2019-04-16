@@ -10,6 +10,9 @@ namespace SweepStakesProject
     {
         static void Main(string[] args)
         {
+            Contestant contestant = new Contestant();
+
+            contestant.GetInfo();
         }
     }
 }
