@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace SweepStakesProject
 {
-    class SweepstakesClass
+   public class SweepstakesClass
     {
         //Dictionary data structure 
 
-        //***********Methods To Create***************************
-        public void Sweepstakes(string name)
+        //***********Methods To Create*********************
+        public SweepstakesClass(string name) //
         {
             throw new System.NotImplementedException();
         }

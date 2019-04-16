@@ -10,8 +10,13 @@ namespace SweepStakesProject
     {
         static void Main(string[] args)
         {
-            Contestant contestant = new Contestant();
-            contestant.GetInfo(); //Testing
+            UserInterface userinterface = new UserInterface();
+            userinterface.GetEmailAddress(); //Testing
+            userinterface.GetName(); //Testing
+            Console.ReadLine();//test delete later
+
+
+
         }
     }
 }

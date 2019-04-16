@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace SweepStakesProject
 {
-    class SweepstakesQueueManager : ISweepstakesManager
+    public class SweepstakesQueueManager : ISweepstakesManager
     {
         //use Queue data structure
+
+        public void InsertSweepstakes(SweepstakesClass sweepstakesclass)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public SweepstakesClass GetSweepstakes()
+
+        {
+            throw new System.NotImplementedException();
+        }
+
     }
 }
