@@ -8,7 +8,7 @@ namespace SweepStakesProject
 {
     class SweepstakesClass
     {
-
+        //Dictionary data structure 
 
         //***********Methods To Create***************************
         public void Sweepstakes(string name)

@@ -9,6 +9,7 @@ namespace SweepStakesProject
     class Contestant : IUser
     {
         //member variable
+        string name;
         private string firstName;
         public string FirstName
         {
@@ -64,19 +65,23 @@ namespace SweepStakesProject
         //constructor
         public Contestant()
         {
-            this.FirstName = FirstName;
-            this.LastName = LastName;
-            this.EmailAddress = EmailAddress;
+            //***Dont think i'll need this..maybe***
+            //this.FirstName = FirstName;
+            //this.LastName = LastName;
+            //this.EmailAddress = EmailAddress;
         }
         //member method
         public void GetInfo()
         {
             Console.WriteLine("Please Enter your first name: ");
-            Console.ReadLine();
+            string FirstName = Console.ReadLine();
             Console.WriteLine("Please Enter your last name: ");
-            Console.ReadLine();
+            string LastName = Console.ReadLine();
+            name = String.Concat(FirstName, " ", LastName); //joining first name and last name with a spacein between
             Console.WriteLine("Please Enter your email address name: ");
-            Console.ReadLine();
+            string EmailAddress = Console.ReadLine();
+            Console.WriteLine(name + " " + EmailAddress); //Test delete later
+            Console.ReadLine();//test delete later
         }
     }
 }
