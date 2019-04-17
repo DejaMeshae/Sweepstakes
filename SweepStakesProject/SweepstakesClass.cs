@@ -6,29 +6,31 @@ using System.Threading.Tasks;
 
 namespace SweepStakesProject
 {
-   public class SweepstakesClass
+    public class SweepstakesClass
     {
         //member variable
-        //create a dictionary of people 
-        Contestant contestant = new Contestant();
-
-
+        private int winner;
         Dictionary<int, Contestant> individuals = new Dictionary<int, Contestant>();
-        //individuals.Add(1, Contestant);
-           
-
-            //foreach (KeyValuePair<int, Contestant> pair in individuals)
-            //{
-            //    Console.WriteLine(pair.Key + " - " + pair.Value);
-            //}
-
-            //string findPerson = individuals[2];
-            //Console.WriteLine("The last name of this person is {0}", findPerson);
 
 
 
-    public SweepstakesClass()
+        //foreach (KeyValuePair<int, Contestant> pair in individuals)
+        //{
+        //    Console.WriteLine(pair.Key + " - " + pair.Value);
+        //}
+
+        //string findPerson = individuals[2];
+        //Console.WriteLine("The last name of this person is {0}", findPerson);
+
+        //if (values.TryGetValue("1", out string info))
+        //{
+        //    Console.WriteLine(info);
+        //}
+
+
+        public SweepstakesClass()
         {
+
         }
 
         private string name;
@@ -45,26 +47,28 @@ namespace SweepStakesProject
             }
         }
 
-        public SweepstakesClass(string name)
+        public SweepstakesClass(string name) //Random rnd**might not need this
         {
             this.name = name;
+            //this.rnd = rnd;
+            //Random rnd = new Random();
         }
 
-        //***********Methods To Create*********************
         public void RegisterContestant(Contestant contestant)//Dictionary test
         {
-            //just assign the contestant info here
-            throw new System.NotImplementedException();
-
+            individuals.Add(1, contestant);
         }
 
         public string PickWinner()
         {
+            //random method 
+           // winner = rnd.Next(50, 100);
             throw new System.NotImplementedException();
         }
 
         public void PrintContestantInfo(Contestant contestant)
         {
+            Console.WriteLine("Here is the contestant information: ");       
             throw new System.NotImplementedException();
         }
     }
