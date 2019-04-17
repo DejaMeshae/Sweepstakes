@@ -9,52 +9,33 @@ namespace SweepStakesProject
     public class SweepstakesClass
     {
         //member variable
+        string name;
         private int winner;
         Dictionary<int, Contestant> individuals = new Dictionary<int, Contestant>();
 
-
-
-        //foreach (KeyValuePair<int, Contestant> pair in individuals)
+        //constructor
+        //private string name;
+        //public string Name
         //{
-        //    Console.WriteLine(pair.Key + " - " + pair.Value);
+        //    get
+        //    {
+        //        return name;
+        //    }
+
+        //    set
+        //    {
+        //        name = value;
+        //    }
         //}
 
-        //string findPerson = individuals[2];
-        //Console.WriteLine("The last name of this person is {0}", findPerson);
-
-        //if (values.TryGetValue("1", out string info))
-        //{
-        //    Console.WriteLine(info);
-        //}
-
-
-        public SweepstakesClass()
+        public SweepstakesClass(string sweepstakesname) //Random rnd**might not need this
         {
-
-        }
-
-        private string name;
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
-        }
-
-        public SweepstakesClass(string name) //Random rnd**might not need this
-        {
-            this.name = name;
+            this.name = sweepstakesname;
             //this.rnd = rnd;
             //Random rnd = new Random();
         }
 
-        public void RegisterContestant(Contestant contestant)//Dictionary test
+        public void RegisterContestant(Contestant contestant)//Add to dictionary test
         {
             individuals.Add(1, contestant);
         }
@@ -68,8 +49,25 @@ namespace SweepStakesProject
 
         public void PrintContestantInfo(Contestant contestant)
         {
-            Console.WriteLine("Here is the contestant information: ");       
-            throw new System.NotImplementedException();
+            //pull value of the random method key 
+            //cww here is the winner here have the method in the userinterface and call it here 
+            //
+            Console.WriteLine("Here is the contestant information: ", contestant);
         }
     }
 }
+
+
+        //**dictionary tests delete**
+        //foreach (KeyValuePair<int, Contestant> pair in individuals)
+        //{
+        //    Console.WriteLine(pair.Key + " - " + pair.Value);
+        //}
+
+        //string findPerson = individuals[2];
+        //Console.WriteLine("The last name of this person is {0}", findPerson);
+
+        //if (values.TryGetValue("1", out string info))
+        //{
+        //    Console.WriteLine(info);
+        //}

@@ -8,7 +8,7 @@ namespace SweepStakesProject
 {
     public interface ISweepstakesManager
     {
-        //*****Hold Methods*********
+        //*****Hold Methods as it is an interface*********
         void InsertSweepstakes(SweepstakesClass sweepstakes);
 
         SweepstakesClass GetSweepstakes();
