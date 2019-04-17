@@ -10,9 +10,13 @@ namespace SweepStakesProject
     {
         static void Main(string[] args)
         {
-            UserInterface userinterface = new UserInterface();
-            userinterface.GetEmailAddress(); //Testing
-            userinterface.GetName(); //Testing
+            Contestant contestant = new Contestant();
+            SweepstakesClass sweepstakesClass = new SweepstakesClass();
+            UserInterface.GetFirstName(); //Testing this and above are running in the constructor
+            UserInterface.GetLastName();//Testing
+            UserInterface.GetEmailAddress(); //Testing
+            //UserInterface.Thanks(firstName, lastName);//Testing
+            //sweepstakesClass.RegisterContestant(contestant);//Testing 
             Console.ReadLine();//test delete later
 
 

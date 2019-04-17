@@ -6,42 +6,41 @@ using System.Threading.Tasks;
 
 namespace SweepStakesProject
 {
-    public class UserInterface
+    public static class UserInterface 
     {
         //member variable
-        string name;
 
-
-        //constructor
-
+        
+       //constructor
 
 
         //member method
-        //****Might not need this***
-        //public void GetFirstName()
-        //{
-        //    Console.WriteLine("Please Enter your first name:");
-        //    string FirstName = Console.ReadLine();
-        //}
-
-        public void GetEmailAddress() //gets contestant name and email address
+        public static string GetFirstName()
         {
-            Console.WriteLine("To enter please type your email address and press enter: ");
-            string EmailAddress = Console.ReadLine();
+            Console.WriteLine("To enter the sweepstake please enter your first name and press enter:");
+            string firstName = Console.ReadLine();
+            return firstName;
         }
 
-        public void GetName()
+        public static string GetLastName()
         {
-            Console.WriteLine("Please type in your first name: ");
-            string FirstName = Console.ReadLine();
-
-            Console.WriteLine("Please type in your last name: ");
-            string LastName = Console.ReadLine();
-
-            string name = FirstName + " " + LastName; //joining first name and last name with a spacein between
-            Console.WriteLine("Thank you for entering the sweepstakes " + name + ", good luck!"); //Test delete later
+            Console.WriteLine("Please enter your last name:");
+            string lastName = Console.ReadLine();
+            return lastName;
         }
 
+        public static string GetEmailAddress() 
+        {
+            Console.WriteLine("Please enter your email address: ");
+            string emailAddress = Console.ReadLine();
 
+            return emailAddress;
+        }
+
+        public static void Thanks(string firstName, string lastName)
+        {
+            Console.WriteLine($"Thank you for entering the sweepstakes {firstName} {lastName}, good luck!"); //Test delete later
+           
+        }
     }
 }
