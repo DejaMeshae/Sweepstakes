@@ -11,6 +11,7 @@ namespace SweepStakesProject
         //*****Hold Methods as it is an interface*********
         void InsertSweepstakes(SweepstakesClass sweepstakes);
 
+
         SweepstakesClass GetSweepstakes();
     }
 }

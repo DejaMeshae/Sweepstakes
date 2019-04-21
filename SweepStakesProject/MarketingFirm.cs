@@ -12,7 +12,6 @@ namespace SweepStakesProject
         ISweepstakesManager sweepstakesManager;
 
         //constructor
-        //***dependency injection of sweepstakes manager
         public MarketingFirm(ISweepstakesManager sweepstakesManager)
         {
             this.sweepstakesManager = sweepstakesManager;
